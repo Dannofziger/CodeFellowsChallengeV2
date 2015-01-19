@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Library Manager</title>
+    </head>
+    <body>
+        <script src = "book.js"></script>
+        <script src = "shelf.js"></script>
+        <script src = "library.js"></script>
+        <script>
+            addLibrary("rawr");
+            addLibrary("ugh");
+            removeLibrary("rawr");
+            newShelf("ugh", "fantasy");
+            newShelf("ugh", "Nonfiction");
+            removeShelf("ugh","Nonfiction");
+            addBook(1, "LotR", "Tolkein");
+            addBook(2, "LotR", "Tolkein");
+            addBook(3, "HPatSS", "Rowling");
+            enshelf("ugh", "fantasy", 3);
+            console.log(enshelved);
+            removeShelf("ugh", "fantasy");
+            console.log(unshelved);
+            console.log(libraries);
+        </script>
+    </body>
+</html>
